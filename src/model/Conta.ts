@@ -60,13 +60,14 @@ export class Conta {
 
     public sacar(valor: number): boolean {
 
-        if (this._saldo < valor) {
-            console.log(colors.fg.redstrong, "Saldo insuficiente para realizar transação!", colors.reset);
-            return false;
+        if (this._saldo >= valor) {
+            this._saldo = this._saldo - valor;
+            console.log(colors.fg.greenstrong, `Saque de R$${valor} realizado com sucesso!`, colors.reset);
+            return true;
         }
 
-        this._saldo = this._saldo - valor;
-        return true;
+        console.log(colors.fg.redstrong, "Saldo insuficiente para realizar transação!", colors.reset);
+        return false;
 
     }
 

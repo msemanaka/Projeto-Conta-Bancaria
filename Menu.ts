@@ -1,6 +1,8 @@
 import readline = require("readline-sync");
 import { colors } from "./src/util/Colors";
 import { Conta } from "./src/model/Conta";
+import { ContaCorrente } from "./src/model/ContaCorrente";
+import { ContaPoupanca } from "./src/model/ContaPoupanca";
 
 export function main() {
 
@@ -14,12 +16,25 @@ export function main() {
     conta.visualizar();
 
     const conta2: Conta = new Conta(1, 852, 1, "Rebeca", 510200);
-    conta.visualizar();
-    conta.sacar(2500);
-    conta.visualizar();
-    conta.depositar(800);
-    conta.visualizar();
+    conta2.visualizar();
+    conta2.sacar(2500);
+    conta2.visualizar();
+    conta2.depositar(800);
+    conta2.visualizar();
 
+    const cc1: ContaCorrente = new ContaCorrente(2, 489, 1, "Isis", 60000, 1000);
+    cc1.visualizar();
+    cc1.sacar(250);
+    cc1.visualizar();
+    cc1.depositar(50);
+    cc1.visualizar();
+
+    const cp1: ContaPoupanca = new ContaPoupanca(1, 555, 2, "Katia", 55000);
+    cp1.visualizar();
+    cp1.sacar(150);
+    cp1.visualizar();
+    cp1.depositar(400);
+    cp1.visualizar();
 
     while (true) {
 
@@ -95,7 +110,7 @@ export function main() {
 
 export function sobre(): void {
     console.log("\n__________________________________________________");
-    console.log("|   Projeto Desenvolvido por: Milena Semanaka    |");
+    console.log("    Projeto Desenvolvido por: Milena Semanaka.    ");
     console.log("__________________________________________________");
 }
 

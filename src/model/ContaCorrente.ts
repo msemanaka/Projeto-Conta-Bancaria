@@ -30,7 +30,7 @@ export class ContaCorrente extends Conta {
 
         if ((this.saldo + this._limite) >= valor) {
             this.saldo = this.saldo - valor;
-            console.log(colors.fg.greenstrong, `Saque de R$${valor} realizado com sucesso!`, colors.reset);
+            console.log(colors.fg.greenstrong, `Saque de R$${(valor).toFixed(2)} realizado com sucesso!`, colors.reset);
             return true;
         }
 

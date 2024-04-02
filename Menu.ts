@@ -24,14 +24,14 @@ export function main() {
 
     const cc1: ContaCorrente = new ContaCorrente(2, 489, 1, "Isis", 60000, 1000);
     cc1.visualizar();
-    cc1.sacar(250);
+    cc1.sacar(700000);
     cc1.visualizar();
     cc1.depositar(50);
     cc1.visualizar();
 
-    const cp1: ContaPoupanca = new ContaPoupanca(1, 555, 2, "Katia", 55000);
+    const cp1: ContaPoupanca = new ContaPoupanca(1, 555, 2, "Katia", 55000, 24);
     cp1.visualizar();
-    cp1.sacar(150);
+    cp1.sacar(150.50);
     cp1.visualizar();
     cp1.depositar(400);
     cp1.visualizar();

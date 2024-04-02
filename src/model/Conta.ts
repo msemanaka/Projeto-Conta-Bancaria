@@ -62,7 +62,7 @@ export class Conta {
 
         if (this._saldo >= valor) {
             this._saldo = this._saldo - valor;
-            console.log(colors.fg.greenstrong, `Saque de R$${valor} realizado com sucesso!`, colors.reset);
+            console.log(colors.fg.greenstrong, `Saque de R$${(valor).toFixed(2)} realizado com sucesso!`, colors.reset);
             return true;
         }
 
@@ -74,7 +74,7 @@ export class Conta {
 
     public depositar(valor: number): void {
         this._saldo = this._saldo + valor;
-        console.log(colors.fg.greenstrong, `Depósito de R$${valor} realizado com sucesso`, colors.reset);
+        console.log(colors.fg.greenstrong, `Depósito de R$${(valor).toFixed(2)} realizado com sucesso`, colors.reset);
     }
 
 
@@ -100,7 +100,7 @@ export class Conta {
         console.log(`Agencia: ${this._agencia}`)
         console.log(`Tipo da conta: ${this._tipo}`)
         console.log(`Titular: ${this._titular}`)
-        console.log(`Saldo: ${this._saldo}`)
+        console.log(`Saldo: ${(this._saldo).toFixed(2)}`)
 
     }
 }

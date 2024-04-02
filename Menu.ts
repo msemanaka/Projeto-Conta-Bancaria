@@ -8,19 +8,19 @@ export function main() {
 
     let opcao: number;
 
-    const conta: Conta = new Conta(1, 123, 1, "Milena", 10000);
-    conta.visualizar();
-    conta.sacar(10500);
-    conta.visualizar();
-    conta.depositar(5000);
-    conta.visualizar();
+    // const conta: Conta = new Conta(1, 123, 1, "Milena", 10000);
+    // conta.visualizar();
+    // conta.sacar(10500);
+    // conta.visualizar();
+    // conta.depositar(5000);
+    // conta.visualizar();
 
-    const conta2: Conta = new Conta(1, 852, 1, "Rebeca", 510200);
-    conta2.visualizar();
-    conta2.sacar(2500);
-    conta2.visualizar();
-    conta2.depositar(800);
-    conta2.visualizar();
+    // const conta2: Conta = new Conta(1, 852, 1, "Rebeca", 510200);
+    // conta2.visualizar();
+    // conta2.sacar(2500);
+    // conta2.visualizar();
+    // conta2.depositar(800);
+    // conta2.visualizar();
 
     const cc1: ContaCorrente = new ContaCorrente(2, 489, 1, "Isis", 60000, 1000);
     cc1.visualizar();

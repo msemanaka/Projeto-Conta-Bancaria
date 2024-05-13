@@ -24,36 +24,6 @@ export function main() {
     const contaPoupanca: ContaPoupanca = new ContaPoupanca(contas.gerarNumero(), 123, 2, "Milena Semanaka", 100000, 10);
     contas.cadastrar(contaPoupanca);
 
-    // const conta: Conta = new Conta(1, 123, 1, "Milena", 10000);
-    // conta.visualizar();
-    // conta.sacar(10500);
-    // conta.visualizar();
-    // conta.depositar(5000);
-    // conta.visualizar();
-
-    // const conta2: Conta = new Conta(1, 852, 1, "Rebeca", 510200);
-    // conta2.visualizar();
-    // conta2.sacar(2500);
-    // conta2.visualizar();
-    // conta2.depositar(800);
-    // conta2.visualizar();
-
-    // const cc4: ContaCorrente = new ContaCorrente(2, 489, 1, "Isis", 60000, 1000);
-    // cc4.visualizar();
-    // cc4.sacar(700000);
-    // cc4.visualizar();
-    // cc4.depositar(50);
-    // cc4.visualizar();
-
-    // const cp1: ContaPoupanca = new ContaPoupanca(1, 555, 2, "Katia", 55000, 24);
-    // cp1.visualizar();
-    // cp1.sacar(150.50);
-    // cp1.visualizar();
-    // cp1.depositar(400);
-    // cp1.visualizar();
-
-
-
     while (true) {
 
         console.log(colors.fg.green, "\n******************************************************");
@@ -80,7 +50,7 @@ export function main() {
 
         if (opcao == 0) {
             console.log(colors.fg.greenstrong,
-                "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
+                "\nBanco da Milena - O seu Futuro começa aqui!");
             sobre();
             console.log(colors.reset, "");
             process.exit(0);
@@ -267,10 +237,10 @@ export function main() {
 
 export function sobre(): void {
     console.log("\n__________________________________________________");
-    console.log("    Projeto Desenvolvido por:    ");
-    console.log("    Milena Semanaka - milena.sforte@gmail.com    ");
-    console.log("    github.com/msemanaka   ");
-    console.log("__________________________________________________");
+    console.log("      Projeto Desenvolvido por:    ");
+    console.log("      Milena Semanaka - milena.sforte@gmail.com       ");
+    console.log("      github.com/msemanaka   ");
+    console.log("____________________________________________________");
 }
 
 function keyPress(): void {

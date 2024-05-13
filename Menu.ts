@@ -247,13 +247,13 @@ export function main() {
                 console.log(colors.fg.whitestrong,
                     "\n\nConsultar conta por titular\n\n", colors.reset);
 
-                    console.log("Digite o Nome do Titular: ")
-                    titular = readlinesync.question("")
+                console.log("Digite o Nome do Titular: ")
+                titular = readlinesync.question("")
 
-                    contas.procurarPorTitular(titular);
+                contas.procurarPorTitular(titular);
 
-                    keyPress();
-            break;
+                keyPress();
+                break;
             default:
                 console.log(colors.fg.whitestrong,
                     "\nOpção Inválida!\n", colors.reset);
